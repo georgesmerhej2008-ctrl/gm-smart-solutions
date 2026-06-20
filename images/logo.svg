@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="512" height="512" rx="120" fill="#0F172A"></rect>
+
+<!-- Circuit circles -->
+<circle cx="120" cy="180" r="10" fill="#06B6D4"></circle>
+<circle cx="392" cy="180" r="10" fill="#06B6D4"></circle>
+<circle cx="256" cy="340" r="10" fill="#F59E0B"></circle>
+
+<!-- Lines -->
+<path d="M120 180 L256 120 L392 180" stroke="#06B6D4" stroke-width="6"></path>
+<path d="M256 120 L256 340" stroke="#F59E0B" stroke-width="6"></path>
+
+<!-- GM Text -->
+<text x="50%" y="55%" text-anchor="middle" font-size="90" fill="#FFFFFF" font-family="Arial Black">
+
+GM
+
+</text>
+
+<text x="50%" y="70%" text-anchor="middle" font-size="22" fill="#94A3B8" font-family="Arial">
+
+SMART SOLUTIONS
+
+</text>
+
+</svg>

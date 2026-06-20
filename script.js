@@ -1,76 +1,62 @@
 function goContact(){
 
-document
-.getElementById("contact")
-.scrollIntoView({
-
-behavior:"smooth"
-
-});
+    document
+    .getElementById("contact")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
 
 }
 
 
 
-
-const form =
-document.getElementById("form");
-
-
-form.addEventListener("submit",(e)=>{
+document
+.getElementById("form")
+.addEventListener("submit", function(event){
 
 
-e.preventDefault();
+event.preventDefault();
 
 
 
-let name =
+let name = 
 document.getElementById("name").value;
 
 
-
-let contact =
+let phone = 
 document.getElementById("contact").value;
 
 
-
-let message =
+let project = 
 document.getElementById("message").value;
 
 
 
+let whatsappText =
 
-let text =
+"Hello Georges 👋\n\n" +
 
-`Hello Georges,
+"New Project Request\n\n" +
 
-New Project Request:
+"Name: " + name + "\n\n" +
 
-Name:
-${name}
+"Contact: " + phone + "\n\n" +
 
-Contact:
-${contact}
-
-Project:
-${message}`;
+"Project:\n" + project;
 
 
 
-let whatsapp =
+let whatsappURL =
 
 "https://wa.me/96176324451?text="
 
 +
 
-encodeURIComponent(text);
+encodeURIComponent(whatsappText);
 
 
 
-window.open(
-whatsapp,
-"_blank"
-);
+window.location.href = whatsappURL;
 
 
 

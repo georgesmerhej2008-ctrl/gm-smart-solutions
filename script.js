@@ -13,20 +13,65 @@ behavior:"smooth"
 
 
 
-const projects =
-document.querySelectorAll(".project");
+const form =
+document.getElementById("form");
 
 
-projects.forEach(card=>{
+form.addEventListener("submit",(e)=>{
 
 
-card.onclick=()=>{
+e.preventDefault();
 
 
-card.classList.toggle("active");
+
+let name =
+document.getElementById("name").value;
 
 
-};
+
+let contact =
+document.getElementById("contact").value;
+
+
+
+let message =
+document.getElementById("message").value;
+
+
+
+
+let text =
+
+`Hello Georges,
+
+New Project Request:
+
+Name:
+${name}
+
+Contact:
+${contact}
+
+Project:
+${message}`;
+
+
+
+let whatsapp =
+
+"https://wa.me/96176324451?text="
+
++
+
+encodeURIComponent(text);
+
+
+
+window.open(
+whatsapp,
+"_blank"
+);
+
 
 
 });
